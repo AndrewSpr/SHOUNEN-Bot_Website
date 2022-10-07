@@ -16,10 +16,15 @@
     border-image: linear-gradient(to bottom, #FFFFFF 0%, transparent 80%) 1;
 
     padding-left: 30px;
+    margin-left: -100%;
 
-    margin-left: 90px;
+    transition: 2s;
 
     & span {
         color: #FD6E5D;
+    }
+
+    &._active {
+        margin-left: 90px;
     }
 }

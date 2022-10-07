@@ -40,4 +40,20 @@ window.onload = function () {
         })
     }
 }
+
+window.onload = function () {
+    const LABEL_TEXT = document.querySelector(".parallax__label");
+    const HEADER = document.querySelector(".parallax__header");
+    const FOOTER = document.querySelector(".parallax__footer");
+
+    if(LABEL_TEXT) {
+        LABEL_TEXT.classList.add("_active")
+    }
+    if(HEADER) {
+        HEADER.classList.add("_active")
+    }
+    if(FOOTER) {
+        FOOTER.classList.add("_active")
+    }
+}
   
