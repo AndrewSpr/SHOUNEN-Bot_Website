@@ -1,0 +1,77 @@
+.parallax__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    padding: 0 15px;
+}
+
+.decorative-line {
+    display: block;
+    max-width: 965px;
+    width: 100%;
+    border-bottom: 3px solid #FFFFFF;
+
+    &.decorative-line--right {
+        max-width: 715px;
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+
+    max-width: 360px;
+
+    cursor: pointer;
+
+    &:hover .logo__title, 
+    &:hover .logo__subtitle {
+        color: #FD6E5D;
+    }
+
+    margin: 50px 20px 0 20px;
+    white-space: nowrap;
+}
+
+.logo__title {
+    position: relative;
+    font-size: 40px;
+}
+
+.logo__subtitle {
+    font-size: 32px;
+}
+
+.parallax__language-bar {
+    display: flex;
+    width: 200px;
+    height: 45px;
+
+    .language-bar__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        width: 65px;
+
+        border: 3px solid #FFFFFF;
+
+        &:hover {
+            background-color: #FD6E5D;
+        }
+    }
+
+    .language-bar__button--english {
+        border-radius: 16px 0px 0px 16px;
+    }
+    
+    .language-bar__button--russian {
+        border-radius: 0px 16px 16px 0px;
+    }
+}

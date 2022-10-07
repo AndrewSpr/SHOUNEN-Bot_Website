@@ -44,6 +44,16 @@ html, body {
   position: fixed;
 }
 
+.parallax__content {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: 0.305em;
+  position: relative;
+  z-index: 4;
+}
+
 .parallax__img-parallax {
   position: absolute;
   width: 120%;
@@ -51,6 +61,13 @@ html, body {
   top: -10%;
   left: -10%;
   z-index: 1;
+}
+.parallax__img-parallax .partition {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: rgba(253, 110, 93, 0.5);
+  z-index: 3;
 }
 
 .img-parallax__item {
@@ -84,6 +101,91 @@ html, body {
     background-position: 20% center;
   }
 }
+.parallax__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 15px;
+}
+
+.decorative-line {
+  display: block;
+  max-width: 965px;
+  width: 100%;
+  border-bottom: 3px solid #FFFFFF;
+}
+.decorative-line.decorative-line--right {
+  max-width: 715px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  max-width: 360px;
+  cursor: pointer;
+  margin: 50px 20px 0 20px;
+  white-space: nowrap;
+}
+.logo:hover .logo__title, .logo:hover .logo__subtitle {
+  color: #FD6E5D;
+}
+
+.logo__title {
+  position: relative;
+  font-size: 40px;
+}
+
+.logo__subtitle {
+  font-size: 32px;
+}
+
+.parallax__language-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 45px;
+}
+.parallax__language-bar .language-bar__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 65px;
+  border: 3px solid #FFFFFF;
+}
+.parallax__language-bar .language-bar__button:hover {
+  background-color: #FD6E5D;
+}
+.parallax__language-bar .language-bar__button--english {
+  border-radius: 16px 0px 0px 16px;
+}
+.parallax__language-bar .language-bar__button--russian {
+  border-radius: 0px 16px 16px 0px;
+}
+
 .content_wrapper {
   min-height: 100%;
 }
