@@ -1,0 +1,6 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 10" id="arrow">
+    <rect width="3.23868" height="13.9806" rx="1.61934" transform="matrix(-0.961383 -0.275216 0.75863 -0.651521 12.3939 10)" fill="white"></rect>
+    <rect width="3.23868" height="13.9806" rx="1.61934" transform="matrix(0.961383 -0.275216 -0.75863 -0.651521 10.6061 10)" fill="white"></rect>
+  </symbol>
+</svg>

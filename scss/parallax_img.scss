@@ -20,13 +20,17 @@
 
 .parallax__body {
     @include defaultStyles(); 
-    position: fixed;  
+    position: fixed;
 }
 
 .parallax__content {
     @include standartFont();
     position: relative;
     z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .parallax__img-parallax {

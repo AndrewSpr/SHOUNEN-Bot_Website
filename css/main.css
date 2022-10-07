@@ -53,6 +53,14 @@ html, body {
   letter-spacing: 0.305em;
   position: relative;
   z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .parallax__img-parallax {
@@ -123,7 +131,7 @@ html, body {
   border-bottom: 3px solid #FFFFFF;
 }
 .decorative-line.decorative-line--right {
-  max-width: 580px;
+  max-width: 605px;
 }
 
 .logo {
@@ -186,6 +194,66 @@ html, body {
 }
 .parallax__language-bar .language-bar__button--russian {
   border-radius: 0px 16px 16px 0px;
+}
+
+.parallax__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.parallax__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.parallax__button {
+  height: 6px;
+  width: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.parallax__button:hover {
+  height: 12px;
+}
+.parallax__button:hover ~ .parallax__arrow svg {
+  -webkit-transform: rotate(540deg);
+          transform: rotate(540deg);
+}
+
+.parallax__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35px;
+}
+.parallax__arrow .parallax__arrow-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .content_wrapper {

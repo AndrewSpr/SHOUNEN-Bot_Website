@@ -1,7 +1,43 @@
-@mixin standartFont() {
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    line-height: 48px;
-    letter-spacing: 0.305em;
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax__footer {
+    @include flexCenter();
+
+    flex-direction: column;
+    flex: 0 0 auto;
+
+}
+
+.parallax__button {
+    height: 6px;
+    width: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+
+    &:hover {
+        height: 12px;
+    }
+
+    &:hover ~ .parallax__arrow svg {
+        transform: rotate(360deg + 180deg)
+    }
+}
+
+.parallax__arrow {
+    @include flexCenter();
+
+    height: 35px;
+    
+    .parallax__arrow-icon {
+        transition: 0.5s;
+        cursor: pointer;
+    }
 }
