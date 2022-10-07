@@ -18,6 +18,7 @@ a {
 
 html {
   min-width: 320px;
+  max-width: 1920px;
 }
 
 html, body {
@@ -122,7 +123,7 @@ html, body {
   border-bottom: 3px solid #FFFFFF;
 }
 .decorative-line.decorative-line--right {
-  max-width: 715px;
+  max-width: 580px;
 }
 
 .logo {
@@ -139,7 +140,7 @@ html, body {
   text-transform: uppercase;
   max-width: 360px;
   cursor: pointer;
-  margin: 50px 20px 0 20px;
+  margin: 20px 20px 0 20px;
   white-space: nowrap;
 }
 .logo:hover .logo__title, .logo:hover .logo__subtitle {
@@ -148,11 +149,12 @@ html, body {
 
 .logo__title {
   position: relative;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .logo__subtitle {
-  font-size: 32px;
+  font-size: 26px;
+  line-height: 20px;
 }
 
 .parallax__language-bar {
@@ -160,7 +162,7 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   width: 200px;
-  height: 45px;
+  height: 35px;
 }
 .parallax__language-bar .language-bar__button {
   display: -webkit-box;

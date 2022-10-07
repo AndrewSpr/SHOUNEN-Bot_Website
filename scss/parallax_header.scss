@@ -15,7 +15,7 @@
     border-bottom: 3px solid #FFFFFF;
 
     &.decorative-line--right {
-        max-width: 715px;
+        max-width: 580px;
     }
 }
 
@@ -34,23 +34,24 @@
         color: #FD6E5D;
     }
 
-    margin: 50px 20px 0 20px;
+    margin: 20px 20px 0 20px;
     white-space: nowrap;
 }
 
 .logo__title {
     position: relative;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .logo__subtitle {
-    font-size: 32px;
+    font-size: 26px;
+    line-height: 20px;
 }
 
 .parallax__language-bar {
     display: flex;
     width: 200px;
-    height: 45px;
+    height: 35px;
 
     .language-bar__button {
         display: flex;
