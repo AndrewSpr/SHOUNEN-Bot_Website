@@ -38,10 +38,7 @@ window.onload = function () {
             xCoordProcent = coordX / parallaxWidth * 100;
             yCoordProcent = coordY / parallaxHeight * 100;
         })
-    }
-}
 
-window.onload = function () {
     const LABEL_TEXT = document.querySelector(".parallax__label");
     const HEADER = document.querySelector(".parallax__header");
     const FOOTER = document.querySelector(".parallax__footer");
@@ -55,5 +52,5 @@ window.onload = function () {
     if(FOOTER) {
         FOOTER.classList.add("_active")
     }
+    }
 }
-  

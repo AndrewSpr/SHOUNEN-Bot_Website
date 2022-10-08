@@ -122,12 +122,6 @@ html, body {
           align-items: center;
   position: relative;
   padding: 0 15px;
-  margin-top: -100%;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-.parallax__header._active {
-  margin-top: 0;
 }
 
 .decorative-line {
@@ -188,9 +182,14 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   cursor: pointer;
   width: 65px;
   border: 3px solid #FFFFFF;
+}
+.parallax__language-bar .language-bar__button._active {
+  background-color: #FD6E5D;
 }
 .parallax__language-bar .language-bar__button:hover {
   background-color: #FD6E5D;
@@ -216,7 +215,7 @@ html, body {
 
 .parallax__label {
   text-transform: uppercase;
-  font-size: 76px;
+  font-size: 62px;
   letter-spacing: 0.1em;
   line-height: 97px;
   max-width: 760px;
@@ -246,6 +245,7 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -253,29 +253,39 @@ html, body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  margin-bottom: -100%;
-  -webkit-transition: 3s;
-  transition: 3s;
-}
-.parallax__footer._active {
-  margin-bottom: 0;
 }
 
 .parallax__button {
-  height: 6px;
-  width: 500px;
-  background: #ffffff;
-  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
-.parallax__button:hover {
-  height: 12px;
+.parallax__button:hover .parallax__button-body {
+  height: 10px;
 }
-.parallax__button:hover ~ .parallax__arrow svg {
+.parallax__button:hover .parallax__arrow svg {
   -webkit-transform: rotate(540deg);
           transform: rotate(540deg);
+}
+
+.parallax__button-body {
+  height: 6px;
+  width: 350px;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .parallax__arrow {
@@ -293,7 +303,6 @@ html, body {
 .parallax__arrow .parallax__arrow-icon {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .content_wrapper {

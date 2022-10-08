@@ -6,36 +6,34 @@
 
 .parallax__footer {
     @include flexCenter();
+    height: 60px;
 
     flex-direction: column;
     flex: 0 0 auto;
-
-    margin-bottom: -100%;
-
-    transition: 3s;
-
-    &._active {
-        margin-bottom: 0;
-    }
 }
 
 .parallax__button {
-    height: 6px;
-    width: 500px;
-    background: #ffffff;
-    border-radius: 20px;
+    @include flexCenter();
+    flex-direction: column;
 
     cursor: pointer;
 
-    transition: 0.5s;
-
-    &:hover {
-        height: 12px;
+    &:hover .parallax__button-body {
+        height: 10px;
     }
 
-    &:hover ~ .parallax__arrow svg {
+    &:hover .parallax__arrow svg {
         transform: rotate(360deg + 180deg)
     }
+}
+
+.parallax__button-body {
+    height: 6px;
+    width: 350px;
+    background: #ffffff;
+    border-radius: 20px;
+
+    transition: 0.5s;
 }
 
 .parallax__arrow {
@@ -45,6 +43,5 @@
     
     .parallax__arrow-icon {
         transition: 0.5s;
-        cursor: pointer;
     }
 }
