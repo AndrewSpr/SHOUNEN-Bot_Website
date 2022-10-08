@@ -151,9 +151,6 @@ html, body {
   margin: 20px 20px 0 20px;
   white-space: nowrap;
 }
-.logo:hover .logo__title, .logo:hover .logo__subtitle {
-  color: #FD6E5D;
-}
 
 .logo__title {
   position: relative;
@@ -229,7 +226,10 @@ html, body {
   transition: 2s;
 }
 .parallax__label span {
-  color: #FD6E5D;
+  background-color: #FD6E5D;
+  padding: 0 6px;
+  font-size: 68px;
+  border-radius: 5px;
 }
 .parallax__label._active {
   margin-left: 90px;

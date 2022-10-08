@@ -21,7 +21,10 @@
     transition: 2s;
 
     & span {
-        color: #FD6E5D;
+        background-color: #FD6E5D;
+        padding: 0 6px;
+        font-size: 68px;
+        border-radius: 5px;
     }
 
     &._active {
