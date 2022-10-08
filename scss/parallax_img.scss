@@ -41,6 +41,12 @@
     left: -10%;
     z-index: 1;
 
+    transition: 0.25s;
+
+    &._blured {
+        filter: blur(15px)
+    }
+
     .partition {
         position: fixed;
         width: 200%;

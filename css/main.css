@@ -70,6 +70,12 @@ html, body {
   top: -10%;
   left: -10%;
   z-index: 1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.parallax__img-parallax._blured {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
 }
 .parallax__img-parallax .partition {
   position: fixed;
@@ -270,6 +276,8 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 .parallax__button:hover .parallax__button-body {
   height: 10px;
@@ -277,6 +285,10 @@ html, body {
 .parallax__button:hover .parallax__arrow svg {
   -webkit-transform: rotate(540deg);
           transform: rotate(540deg);
+}
+.parallax__button._active {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .parallax__button-body {
@@ -299,6 +311,11 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 35px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.parallax__arrow._disabled {
+  opacity: 0;
 }
 .parallax__arrow .parallax__arrow-icon {
   -webkit-transition: 0.5s;

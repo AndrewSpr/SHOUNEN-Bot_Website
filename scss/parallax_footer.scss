@@ -18,12 +18,18 @@
 
     cursor: pointer;
 
+    transition: 0.25s;
+
     &:hover .parallax__button-body {
         height: 10px;
     }
 
     &:hover .parallax__arrow svg {
         transform: rotate(360deg + 180deg)
+    }
+
+    &._active {
+        transform: scale(0.7);
     }
 }
 
@@ -40,6 +46,12 @@
     @include flexCenter();
 
     height: 35px;
+
+    transition: 0.25s;
+
+    &._disabled {
+        opacity: 0;
+    }
     
     .parallax__arrow-icon {
         transition: 0.5s;

@@ -56,18 +56,36 @@ window.onload = function () {
     if (LABEL_TEXT) {
       LABEL_TEXT.classList.add("_active");
     }
+
+    const LANGUAGE_BAR = document.querySelector(".parallax__language-bar");
+
+    if (LANGUAGE_BAR) {
+      const languageBarItems = LANGUAGE_BAR.children;
+
+      LANGUAGE_BAR.addEventListener("click", (e) => {
+        for (let i = 0; i < languageBarItems.length; i++) {
+          languageBarItems[i].classList.remove("_active");
+        }
+        e.target.classList.add("_active");
+      });
+    }
+
+    const POP_UP_BTN = document.querySelector(".parallax__button");
+
+    if (POP_UP_BTN) {
+      const PARALLAX_IMG = document.querySelector(".parallax__img-parallax");
+      const PUP_UP_BTN_ARROW = document.querySelector(".parallax__arrow")
+
+      const btnClickHandler = () => {
+        POP_UP_BTN.classList.toggle("_active");
+        LABEL_TEXT.classList.toggle("_active");
+        PARALLAX_IMG.classList.toggle("_blured");
+        PUP_UP_BTN_ARROW.classList.toggle("_disabled")
+      }
+
+      POP_UP_BTN.addEventListener("click", (e) => {
+        btnClickHandler()
+      });
+    }
   }
 };
-
-const LANGUAGE_BAR = document.querySelector(".parallax__language-bar")
-
-if(LANGUAGE_BAR) {
-  const languageBarItems = LANGUAGE_BAR.children
-
-  LANGUAGE_BAR.addEventListener('click', (e) => {
-    for (let i = 0; i < languageBarItems.length; i++) {
-      languageBarItems[i].classList.remove("_active")
-    }
-    e.target.classList.add("_active")
-  })
-}
